@@ -8,12 +8,12 @@ export default function Home() {
   return (
     <>
       <Toaster />
-      <div className="w-full p-5">
+      <main className="w-full p-5 md:max-w-4xl md:mx-auto">
         <AboutMe />
         <TechStack />
         <Experiences />
         <Projects />
-      </div>
+      </main>
     </>
   );
 }
