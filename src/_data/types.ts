@@ -18,7 +18,7 @@ type MonthYearFormat = `${MonthAbbrev} ${Year}`;
 interface Experience {
   companyName: string;
   roleTitle: string;
-  roleType: "full-time" | "intern";
+  roleType: "Full-time" | "Intern";
   startDate: MonthYearFormat;
   endDate: MonthYearFormat | undefined; // ongoing
   description: string[];
