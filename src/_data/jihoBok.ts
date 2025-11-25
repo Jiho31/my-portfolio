@@ -47,7 +47,6 @@ const experiences: Experience[] = [
     roleType: "Full-time",
     startDate: "Apr 2023",
     endDate: "Jun 2025",
-    // description: ["acheivement #1", "acheivement #2", "acheivement #3"],
     description: [
       "Led the successful launch of LordNine (achieving #1 on App Store and Google Play, 450,000+ downloads, and over $30M USD in revenue) by developing custom real-time monitoring dashboards with live-status widgets that processed streaming data from multiple backend services, ensuring stable service performance",
       "Reduced incident diagnostic time by 67% (from 90 to 30 minutes average) by developing an incident management system using Vue.js, JavaScript, and RESTful APIs for real-time monitoring and analysis      ",
@@ -56,7 +55,7 @@ const experiences: Experience[] = [
     ],
     techStack: [
       "Vue.js",
-      "JavaScript(ES6+)",
+      "JavaScript (ES6+)",
       "Bootstrap",
       "Figma",
       "GitLab",
@@ -96,35 +95,21 @@ const projects = [
       "Tailwind CSS",
       "Firestore",
       "Firebase Authentication",
+      "Vite",
     ],
     description:
       "Personal bookshelf and book recommendation system implemented with Open Library API",
-    imageSrcs: ["/bookit-list-main-page.png" /* "/temp_image.jpg" */],
+    imageSrcs: ["/bookit-list-bookshelf.png"],
   },
-  {
-    name: "Boom",
-    repositoryLink: "https://github.com/Jiho31/bookit-list-v2",
-    liveServiceLink: "",
-    techStack: ["JavaScript", "React", "HTML/CSS", "WebRTC"],
-    description:
-      "Fusce et lobortis lectus. Nulla vel dui id turpis fringilla rutrum sed non nulla. Proin et tempor nunc, non blandit tellus. In eu elit vel orci porttitor aliquet nec a enim. Donec sit amet nisl a ante fringilla hendrerit.",
-    imageSrcs: [],
-  },
-  {
-    name: "Bookit List",
-    repositoryLink: "https://github.com/Jiho31/bookit-list-v2",
-    liveServiceLink: "https://bookit-list-v2.netlify.app/",
-    techStack: [
-      "TypeScript",
-      "React",
-      "Tailwind CSS",
-      "Firestore",
-      "Firebase Authentication",
-    ],
-    description:
-      "Fusce et lobortis lectus. Nulla vel dui id turpis fringilla rutrum sed non nulla. Proin et tempor nunc, non blandit tellus. In eu elit vel orci porttitor aliquet nec a enim. Donec sit amet nisl a ante fringilla hendrerit.",
-    imageSrcs: [],
-  },
+  // {
+  //   name: "Boom",
+  //   repositoryLink: "https://github.com/Jiho31/bookit-list-v2",
+  //   liveServiceLink: "",
+  //   techStack: ["JavaScript", "React", "HTML/CSS", "WebRTC"],
+  //   description:
+  //     "Fusce et lobortis lectus. Nulla vel dui id turpis fringilla rutrum sed non nulla. Proin et tempor nunc, non blandit tellus. In eu elit vel orci porttitor aliquet nec a enim. Donec sit amet nisl a ante fringilla hendrerit.",
+  //   imageSrcs: [],
+  // },
 ];
 
 export { basic, techStack, experiences, projects };

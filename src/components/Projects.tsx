@@ -93,7 +93,10 @@ export default function Projects() {
       <div className="flex flex-wrap gap-6 lg:max-w-4xl md:grid md:grid-cols-2">
         {projects.map((project, idx) => {
           return (
-            <article key={idx} className="col-span-1 h-auto">
+            <article
+              key={idx}
+              className="col-span-1 w-full h-auto p-5 border border-gray-200 rounded-2xl hover:shadow-lg scale-100 hover:scale-101 transition-all"
+            >
               {/* <ImageSlider /> */}
               {project.imageSrcs.map((img, imgIdx) => (
                 <Image
@@ -118,7 +121,7 @@ export default function Projects() {
                 </h3>
                 {project.liveServiceLink && (
                   <a
-                    className="inline-flex gap-1 px-1.5 py-1 bg-black rounded-lg text-white text-sm"
+                    className="inline-flex gap-1 px-1.5 py-1 bg-black hover:bg-black/80 rounded-lg text-white text-sm"
                     href={project.liveServiceLink}
                     target="_blank"
                   >
@@ -137,7 +140,7 @@ export default function Projects() {
                 )}
                 {project.repositoryLink && (
                   <a
-                    className="inline-flex gap-1 px-1.5 py-1 bg-black rounded-lg text-white text-sm"
+                    className="inline-flex gap-1 px-1.5 py-1 bg-black hover:bg-black/80 rounded-lg text-white text-sm"
                     href={project.repositoryLink}
                     target="_blank"
                   >

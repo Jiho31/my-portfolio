@@ -13,7 +13,7 @@ export default function Badge({
 }) {
   return (
     <span
-      className={`px-1.5 py-1 rounded-md text-white bg-blue-600 font-semibold text-sm`}
+      className={`px-1.5 py-1 rounded-md text-white bg-blue-700 font-semibold text-sm`}
       // style={{ backgroundColor: `${backgroundColor}` }}
     >
       {children}
