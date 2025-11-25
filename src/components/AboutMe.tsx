@@ -9,7 +9,10 @@ function AboutMe() {
     toast.success("Email is copied to clipboard!");
   };
   return (
-    <section className="flex flex-col md:flex-row gap-4 md:gap-0 md:justify-between">
+    <section
+      id="about-me-section"
+      className="flex flex-col md:flex-row gap-4 md:gap-0 md:justify-between"
+    >
       <div className="w-full md:flex-1 flex flex-row md:flex-col md:items-center md:justify-center gap-6 md:gap-4 mt-4 md:mt-0">
         <div className="flex justify-center align-middle w-24 h-24 md:shrink-0 rounded-full bg-gray-300">
           <Image

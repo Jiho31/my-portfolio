@@ -3,7 +3,7 @@ import Badge from "./Badge";
 
 export default function Experiences() {
   return (
-    <section className="mt-6">
+    <section id="experiences-section" className="mt-6">
       <h2 className="text-xl font-bold py-1.5">Experiences</h2>
       <div className="flex flex-col gap-4">
         {experiences.map((data, idx) => {
