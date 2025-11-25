@@ -1,24 +1,23 @@
 import { experiences } from "_data/jihoBok";
-import { useMemo } from "react";
+import Badge from "./Badge";
 
 export default function Experiences() {
-  // group by companyName
-  // const experienceItems = useMemo(() => experiences.map((ex) => {}), []);
-
   return (
     <section className="mt-6">
       <h2 className="text-xl font-bold py-1.5">Experiences</h2>
-      <div>
+      <div className="flex flex-col gap-4">
         {experiences.map((data, idx) => {
           return (
             <article key={idx}>
-              <div>{data.companyName}</div>
-              <div className="flex gap-2">
-                <div className="font-semibold">{data.roleTitle}</div>
+              <div className="text-lg text-neutral-700 font-semibold">
+                {data.companyName}
+              </div>
+              <div className="flex gap-1">
+                <div className="font-bold">{data.roleTitle}</div>
                 <div>({data.roleType})</div>
               </div>
               <div>
-                {data.startDate}-{data.endDate}
+                {data.startDate} - {data.endDate}
               </div>
               <ul>
                 {data.description.map((d, idx) => (
@@ -27,7 +26,18 @@ export default function Experiences() {
                   </li>
                 ))}
               </ul>
-              <div>{data.techStack.join(", ")}</div>
+              {/* <div>{data.techStack.join(", ")}</div> */}
+              <ul className="flex flex-wrap gap-1 mt-2.5">
+                {data.techStack.map((tech, _idx) => (
+                  <li key={_idx}>
+                    <Badge>
+                      {/* <Badge backgroundColor={`${randomColorGenerator()}`}> */}
+                      {/* <Badge backgroundColor="oklch(0.828 0.111 230.318)"> */}
+                      {tech}
+                    </Badge>
+                  </li>
+                ))}
+              </ul>
             </article>
           );
         })}

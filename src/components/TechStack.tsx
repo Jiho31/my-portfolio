@@ -1,5 +1,6 @@
 import { techStack } from "_data/jihoBok";
 import Badge from "./Badge";
+import Image from "next/image";
 
 function TechStack() {
   return (
@@ -12,7 +13,14 @@ function TechStack() {
               // className="px-1.5 py-1 rounded-lg bg-blue-600 text-white text-sm"
               key={item.label + id}
             >
-              <Badge>{item.label}</Badge>
+              <Image
+                src={item.imgSrc}
+                alt={`${item.label} logo`}
+                width={40}
+                height={40}
+                unoptimized
+              />
+              <label className="hidden">{item.label}</label>
             </li>
           );
         })}
