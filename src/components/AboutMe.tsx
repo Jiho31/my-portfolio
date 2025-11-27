@@ -58,10 +58,10 @@ function AboutMe() {
         <p>
           {basic.summary.map((line, idx) => {
             return (
-              <>
+              <span key={idx}>
                 {line}
                 <br />
-              </>
+              </span>
             );
           })}
         </p>
