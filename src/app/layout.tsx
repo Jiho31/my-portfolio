@@ -1,11 +1,6 @@
-import {
-  Geist,
-  Geist_Mono,
-  Inter,
-  Montserrat,
-  Raleway,
-} from "next/font/google";
 import "./globals.css";
+import { Inter, Montserrat, Raleway } from "next/font/google";
+import Providers from "./providers";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,11 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${raleway.className} ${inter.className} ${montserrat.className}`}
+        className={`${raleway.className} ${inter.className} ${montserrat.className} bg-white dark:bg-gray-800 dark:text-white`}
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

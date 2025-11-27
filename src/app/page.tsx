@@ -4,11 +4,13 @@ import TechStack from "components/TechStack";
 import Experiences from "components/Experiences";
 import Projects from "components/Projects";
 import Footer from "@/components/Footer";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
 
 export default function Home() {
   return (
     <>
       <Toaster />
+      <ThemeSwitcher />
       <main className="w-full p-5 md:max-w-4xl md:mx-auto">
         <AboutMe />
         <TechStack />
