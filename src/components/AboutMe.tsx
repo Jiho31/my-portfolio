@@ -29,7 +29,13 @@ function AboutMe() {
             className="inline-flex gap-1.5 cursor-pointer"
             onClick={copyToClipboard}
           >
-            <Image src="/mail.svg" alt="@" width={16} height={16} />
+            <Image
+              className="dark:invert"
+              src="/mail.svg"
+              alt="@"
+              width={16}
+              height={16}
+            />
             {basic.email}
           </button>
           <div className="inline-flex gap-2 mt-1">
@@ -44,6 +50,7 @@ function AboutMe() {
             </a>
             <a href={basic.github} target="_blank">
               <Image
+                className="dark:invert"
                 src="/github.svg"
                 alt="github logo"
                 width={16}

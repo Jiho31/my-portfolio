@@ -9,7 +9,7 @@ export default function Experiences() {
         {experiences.map((data, idx) => {
           return (
             <article key={idx}>
-              <div className="text-lg text-neutral-700 font-semibold">
+              <div className="text-lg text-neutral-700 dark:invert font-semibold">
                 {data.companyName}
               </div>
               <div className="flex gap-1">
@@ -26,15 +26,11 @@ export default function Experiences() {
                   </li>
                 ))}
               </ul>
-              {/* <div>{data.techStack.join(", ")}</div> */}
+              {/* <div>{data.techStack.join(" • ")}</div> */}
               <ul className="flex flex-wrap gap-1 mt-2.5">
                 {data.techStack.map((tech, _idx) => (
                   <li key={_idx}>
-                    <Badge>
-                      {/* <Badge backgroundColor={`${randomColorGenerator()}`}> */}
-                      {/* <Badge backgroundColor="oklch(0.828 0.111 230.318)"> */}
-                      {tech}
-                    </Badge>
+                    <Badge>{tech}</Badge>
                   </li>
                 ))}
               </ul>
