@@ -9,8 +9,8 @@ export default function Footer() {
         <Link href="#experiences-section">Experiences</Link>
         <span className="px-2"> • </span>
         <Link href="#projects-section">Projects</Link>
-        {/* <span className="px-2"> • </span>
-        <li>Blog</li> */}
+        <span className="px-2"> • </span>
+        <Link href="#blogs-section">Blog Posts</Link>
       </ul>
       <span>© Jiho Bok</span>
       {/* <ul>

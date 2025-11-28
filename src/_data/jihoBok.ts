@@ -16,6 +16,7 @@ const basic = {
   ],
   linkedIn: "https://www.linkedin.com/in/jiho-bok/",
   github: "https://github.com/Jiho31",
+  techBlog: "https://medium.com/@bokjiho",
 };
 
 const techStack = [
