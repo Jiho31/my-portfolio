@@ -89,7 +89,7 @@ function ImageSlider() {
 export default function Projects() {
   return (
     <section id="projects-section" className="mt-6">
-      <h2 className="text-xl font-bold py-1.5">Projects</h2>
+      <h2 className="text-2xl font-bold py-1.5">Projects</h2>
       <div className="flex flex-wrap gap-6 lg:max-w-4xl md:grid md:grid-cols-2">
         {projects.map((project, idx) => {
           return (

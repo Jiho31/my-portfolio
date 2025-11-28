@@ -5,7 +5,7 @@ import Image from "next/image";
 function TechStack() {
   return (
     <section className="mt-6">
-      <h2 className="text-xl font-bold py-1.5">Tech Stack</h2>
+      <h2 className="text-2xl font-bold py-1.5">Tech Stack</h2>
       <ul className="flex flex-wrap gap-2">
         {techStack.map((item, id) => {
           return (

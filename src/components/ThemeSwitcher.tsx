@@ -36,7 +36,7 @@ export default function ThemeSwitcher() {
       <button
         type="button"
         onClick={toggleTheme}
-        className="absolute top-3 right-3 hover:opacity-70 hover:cursor-pointer p-3 rounded-full bg-gray-200 dark:bg-gray-600"
+        className="absolute top-3 right-3 transition-all hover:opacity-60 hover:cursor-pointer p-3 rounded-full bg-gray-200 dark:bg-gray-600"
       >
         {currentTheme == "dark" ? (
           <Image
