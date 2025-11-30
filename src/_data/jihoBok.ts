@@ -5,7 +5,7 @@ const basic = {
   roleTitle: "Frontend Engineer",
   email: "bok.jiho@gmail.com",
   summary: [
-    "Hi, I’m Jiho. 👋",
+    // "Hi, I’m Jiho. 👋",
     "",
     "I’m passionate about improving my knowledge through code reviews, while learning modern design patterns to apply best practices. I believe little, continuous improvements will help grow my expertise in software engineering, creating business impacts.",
     "",

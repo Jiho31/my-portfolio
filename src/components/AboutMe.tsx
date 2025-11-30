@@ -2,12 +2,21 @@
 import { toast } from "sonner";
 import { basic } from "_data/jihoBok";
 import Image from "next/image";
+import { useEffect } from "react";
+import useTypingEffect from "_utils/useTypingEffect";
 
 function AboutMe() {
+  const { initTypingAnimation, isTyping, typedTextContent } = useTypingEffect();
+
   const copyToClipboard = (event: React.MouseEvent<HTMLButtonElement>) => {
     navigator.clipboard.writeText(event.currentTarget.innerText);
     toast.success("Email is copied to clipboard!");
   };
+
+  useEffect(() => {
+    initTypingAnimation();
+  }, []);
+
   return (
     <section
       id="about-me-section"
@@ -62,7 +71,17 @@ function AboutMe() {
         </div>
       </div>
       <div className="text-md py-5 md:flex-2 md:py-15 md:pl-5">
+        <div className="text-2xl typing-container">
+          <p>
+            Hi, I&apos;m{" "}
+            <span className={`typed-text ${isTyping && "typing"}`}>
+              {typedTextContent}
+            </span>
+            <span className="cursor">&nbsp;</span>
+          </p>
+        </div>
         <p>
+          <br />
           {basic.summary.map((line, idx) => {
             return (
               <span key={idx}>
