@@ -1,7 +1,10 @@
 import { useCallback, useRef, useState } from "react";
 
-export default function useTypingEffect() {
-  const textArray = ["Jiho", "a Frontend Engineer"];
+export default function useTypingEffect({
+  textArray,
+}: {
+  textArray: string[];
+}) {
   const TYPING_DELAY = 200;
   const ERASING_DELAY = 100;
   const NEW_TEXT_DELAY = 2000; // Delay between current and next text
