@@ -42,7 +42,7 @@ export default function Blog() {
 
   return (
     <section id="blogs-section" className="mt-6">
-      <h2 className="text-2xl font-bold py-1.5">Recent Blog Posts</h2>
+      <h2 className="text-2xl font-bold pt-5 pb-3.5">Recent Blog Posts</h2>
       <ul className="grid grid-cols-1 gap-4">
         {displayContents.map((item) => (
           <BlogArticle key={item.guid} {...item} />

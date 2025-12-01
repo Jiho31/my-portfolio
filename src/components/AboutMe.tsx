@@ -69,7 +69,7 @@ function AboutMe() {
             </div>
           </div>
         </div>
-        <p className="text-md py-5 md:flex-2 md:py-15 md:pl-5">
+        <p className="text-md pt-5 pb-3.5 md:flex-2 md:py-15 md:pl-5">
           {basic.summary.map((line, idx) => {
             return (
               <span key={idx}>
