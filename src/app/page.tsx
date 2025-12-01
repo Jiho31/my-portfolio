@@ -6,6 +6,7 @@ import Projects from "components/Projects";
 import Footer from "@/components/Footer";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import Blog from "@/components/Blog";
+import Landing from "@/components/Landing";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Toaster />
       <ThemeSwitcher />
       <main className="w-full p-5 md:max-w-4xl md:mx-auto">
+        <Landing />
         <AboutMe />
         <TechStack />
         <Experiences />

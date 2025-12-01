@@ -12,11 +12,11 @@ export default function BlogArticle({
   const parseDate = (date: string) => date.split(" ").at(0);
 
   return (
-    <li className="p-4 rounded-2xl border border-gray-200">
+    <li data-aos="fade-up" className="p-4 rounded-2xl border border-gray-200">
       <h3 className="text-lg font-semibold">{title}</h3>
       <p className="text-gray-600 dark:text-gray-400">{parseDate(pubDate)}</p>
       <p
-        className="line-clamp-3 overflow-hidden text-ellipsis"
+        className="line-clamp-4 overflow-hidden text-ellipsis"
         dangerouslySetInnerHTML={{ __html: content }}
       ></p>
       <a
