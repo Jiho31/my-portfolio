@@ -40,6 +40,10 @@ const techStack = [
     imgSrc: "/tech_stack/tailwindcss.svg",
     label: "Tailwind CSS",
   },
+  {
+    imgSrc: "/tech_stack/nodedotjs.svg",
+    label: "Node.js",
+  },
 ];
 
 const experiences: Experience[] = [

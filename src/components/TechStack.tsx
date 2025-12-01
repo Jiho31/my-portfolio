@@ -9,10 +9,7 @@ function TechStack() {
       <ul className="flex flex-wrap gap-2">
         {techStack.map((item, id) => {
           return (
-            <li
-              // className="px-1.5 py-1 rounded-lg bg-blue-600 text-white text-sm"
-              key={item.label + id}
-            >
+            <li key={item.label + id}>
               <Image
                 src={item.imgSrc}
                 alt={`${item.label} logo`}
