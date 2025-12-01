@@ -96,6 +96,7 @@ export default function Projects() {
             <article
               key={idx}
               className="col-span-1 w-full h-auto p-5 border border-gray-200 rounded-2xl hover:shadow-lg scale-100 hover:scale-101 transition-all"
+              data-aos="fade-up"
             >
               {/* <ImageSlider /> */}
               {project.imageSrcs.map((img, imgIdx) => (

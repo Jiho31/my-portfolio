@@ -8,7 +8,7 @@ export default function Experiences() {
       <div className="flex flex-col gap-4">
         {experiences.map((data, idx) => {
           return (
-            <article key={idx}>
+            <article key={idx} data-aos="fade-down">
               <div className="text-lg text-neutral-700 dark:invert font-semibold">
                 {data.companyName}
               </div>

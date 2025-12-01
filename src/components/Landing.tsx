@@ -23,7 +23,10 @@ export default function Landing() {
         <span className="cursor">&nbsp;</span>
       </p>
       <div className="flex-1 self-center animate-bounce">
-        <Link href="#about-me-section" className="hover:cursor-pointer text-lg">
+        <Link
+          href="#about-me-section"
+          className="hover:cursor-pointer place-self-center text-lg"
+        >
           Scroll down{" "}
           <Image
             className="place-self-center dark:invert"
