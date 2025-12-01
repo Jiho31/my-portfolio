@@ -16,7 +16,7 @@ export default function BlogArticle({
       <h3 className="text-lg font-semibold">{title}</h3>
       <p className="text-gray-600 dark:text-gray-400">{parseDate(pubDate)}</p>
       <p
-        className="line-clamp-3 overflow-hidden text-ellipsis"
+        className="line-clamp-4 overflow-hidden text-ellipsis"
         dangerouslySetInnerHTML={{ __html: content }}
       ></p>
       <a
