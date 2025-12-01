@@ -34,8 +34,8 @@ function AboutMe() {
                 className="dark:invert"
                 src="/mail.svg"
                 alt="@"
-                width={16}
-                height={16}
+                width={20}
+                height={20}
               />
               {basic.email}
             </button>
@@ -44,8 +44,8 @@ function AboutMe() {
                 <Image
                   src="/linkedin.svg"
                   alt="linkedin logo"
-                  width={16}
-                  height={16}
+                  width={18}
+                  height={18}
                 />
               </a>
               <a href={basic.github} target="_blank">
@@ -53,8 +53,8 @@ function AboutMe() {
                   className="dark:invert"
                   src="/github.svg"
                   alt="github logo"
-                  width={16}
-                  height={16}
+                  width={18}
+                  height={18}
                 />
               </a>
               <a href={basic.techBlog} target="_blank">
@@ -62,8 +62,8 @@ function AboutMe() {
                   className="dark:invert"
                   src="/medium.svg"
                   alt="medium logo"
-                  width={16}
-                  height={16}
+                  width={18}
+                  height={18}
                 />
               </a>
             </div>
