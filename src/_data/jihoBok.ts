@@ -83,9 +83,9 @@ const experiences: Experience[] = [
       "TypeScript",
       "Styled-components",
       "WebRTC",
-      "kurento-utils",
       "Figma",
-      "GitLab",
+      "GitLab CI/CD",
+      "Agile/Scrum",
     ],
   },
 ];
@@ -107,15 +107,29 @@ const projects = [
       "Personal bookshelf and book recommendation system implemented with Open Library API",
     imageSrcs: ["/bookit-list-bookshelf.png"],
   },
-  // {
-  //   name: "Boom",
-  //   repositoryLink: "https://github.com/Jiho31/bookit-list-v2",
-  //   liveServiceLink: "",
-  //   techStack: ["JavaScript", "React", "HTML/CSS", "WebRTC"],
-  //   description:
-  //     "Fusce et lobortis lectus. Nulla vel dui id turpis fringilla rutrum sed non nulla. Proin et tempor nunc, non blandit tellus. In eu elit vel orci porttitor aliquet nec a enim. Donec sit amet nisl a ante fringilla hendrerit.",
-  //   imageSrcs: [],
-  // },
+  {
+    name: "My Portfolio",
+    repositoryLink: "https://github.com/Jiho31/my-portfolio",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Figma"],
+    description:
+      "My portfolio website built with responsive, modern UI/UX designs",
+    imageSrcs: ["/my-portfolio.png"],
+  },
+  {
+    name: "Distove",
+    techStack: [
+      "React",
+      "TypeScript",
+      "Styled-components",
+      "REST API",
+      "Redux Toolkit",
+      "WebRTC",
+      "kurento-utils",
+    ],
+    description:
+      "Real-time video call web application cloning the features of Discord, implemented during internship at Smilegate within an agile team of 3 Backend developers, 2 Frontend developers",
+    imageSrcs: ["/distove-screenshot.jpg"],
+  },
 ];
 
 export { basic, techStack, experiences, projects };
