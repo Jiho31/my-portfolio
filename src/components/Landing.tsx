@@ -26,7 +26,7 @@ export default function Landing() {
         <Link href="#about-me-section" className="hover:cursor-pointer text-lg">
           Scroll down{" "}
           <Image
-            className="place-self-center"
+            className="place-self-center dark:invert"
             src="/double_arrow_down.svg"
             alt="double arrow downward"
             width={36}
