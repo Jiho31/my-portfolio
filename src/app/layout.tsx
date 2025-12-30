@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter, Montserrat, Raleway } from "next/font/google";
 import Providers from "./providers";
+import type { Metadata } from "next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -14,8 +15,8 @@ const raleway = Raleway({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Jiho Bok",
+export const metadata: Metadata = {
+  title: "Jiho Bok - Frontend Engineer",
   description: "Portfolio v.1",
 };
 

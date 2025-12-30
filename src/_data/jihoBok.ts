@@ -125,7 +125,7 @@ const projects = [
     ],
     description:
       "Christmas themed web game app built with Phaser 3. Create a customised game and share it with friends!",
-    imageSrcs: ["/rudolph-game.png"],
+    imageSrcs: ["/secret-rudolph-game.png"],
   },
   {
     name: "My Portfolio",
